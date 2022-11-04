@@ -46,7 +46,21 @@ Bill.displayInfo();
 var lada = new Car ("lada", 1800);
 Bill.Carowner(lada)
 
+person{
+    name: 'Bill',
+    age: 18,
+    car:  {
+        name: 'lada',
+        brand: 'niva',
+        year: 1800
+    }
+}
 
+car{
+    name: 'lada',
+        brand: 'niva',
+        year: 1800
+}
 
 //ეს დავალებაში არ შედის მაგრამ მაინც  prototype
 function User (tName, tAge){
