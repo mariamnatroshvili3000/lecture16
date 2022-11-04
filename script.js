@@ -22,6 +22,7 @@
 // document.write(tom.name)
 
 // Car type constructor
+
 function Car(mName, mYear){
     this.name = mName;
     this.year = mYear;
@@ -45,3 +46,23 @@ tom.displayInfo();
 
 var lada = new Car ("lada", 1800);
 tom.driveCar(lada)
+
+
+
+//ეს დავალებაში არ შედის მაგრამ მაინც გავარჩიე prototype
+function User (tName, tAge){
+    this.name = tName;
+    this.age = tAge;
+    this.displayInfo = function(){
+        document.write("saxeli" + this.name + "asaki" + this.age)
+        }
+    }
+
+    User.prototype.maxAge = 110;
+var tom = new User ("Tom", 26)
+tom.hello()
+document.write(tom.maxAge)
+var mari = new User ("Giorgi", 24)
+mari.hello()
+
+document.write(mari.maxAge)
