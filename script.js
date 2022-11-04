@@ -23,33 +23,32 @@
 
 // Car type constructor
 
-function Car(mName, mYear){
+function Car(mName, mBrand, mYear){
     this.name = mName;
+    this.brand = mBrand;
     this.year = mYear;
-    this.getCarinfo = function(){
-        document.write("model" + this.name + "gamoshvebis weli" + this.year)
     }
 }
 function User (pName, pAge){
     this.name = pName;
     this.age = pAge;
-    this.driveCar = function(car){
-        document.write(this.name + "atarebs" + car.name + car.year)
+    this.Carowner = function(car){
+        document.write(''+ 'has' + car.name + '' + car.brand +''+ car.year)
     }
 this.displayInfo =  function(){
-    document.write("saxeli" + this.name + "asaki" + this.age)
+    document.write(this.name + '' + 'is' + '' this.age + 'years')
 }
 }
 
-var tom = new User ("Tomi", 18);
-tom.displayInfo();
+var Bill = new User ("Bill", 18);
+Bill.displayInfo();
 
 var lada = new Car ("lada", 1800);
-tom.driveCar(lada)
+Bill.Carowner(lada)
 
 
 
-//ეს დავალებაში არ შედის მაგრამ მაინც გავარჩიე prototype
+//ეს დავალებაში არ შედის მაგრამ მაინც  prototype
 function User (tName, tAge){
     this.name = tName;
     this.age = tAge;
