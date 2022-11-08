@@ -33,11 +33,11 @@ function User (pName, pAge){
     this.name = pName;
     this.age = pAge;
     this.Carowner = function(car){
-        document.write(''+ 'has' + car.name + '' + car.brand +''+ car.year)
+        document.write(''+ 'has' + car.name + ''+ car.year)
     }
 this.displayInfo =  function(){
-    document.write(this.name + '' + 'is' + '' this.age + 'years')
-}
+    document.write(this.name + '' + 'is' + '' + this.age + 'years')
+    }
 }
 
 var Bill = new User ("Bill", 18);
